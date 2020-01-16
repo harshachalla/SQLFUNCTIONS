@@ -41,6 +41,7 @@ DateAdd
 <dd>SELECT DATEADD(month, -2, '2017/08/25') AS DateAdd;</dd>
 <dt>output:</dt>
 </dl>
+
 ```
 DateAdd
 2017-06-25 00:00:00.000
@@ -53,6 +54,7 @@ DateAdd
 
 <dt>Syntax</dt>
 </dl>
+
 ```
 DATEDIFF(interval, date1, date2)
 ```
@@ -62,6 +64,7 @@ DATEDIFF(interval, date1, date2)
 <dd>SELECT DATEDIFF(year, '2017/08/25', '2011/08/25') AS DateDiff;</dd>
          <dt> output:</dt>
          </dl>
+         
 ``` 
 6
 ```
