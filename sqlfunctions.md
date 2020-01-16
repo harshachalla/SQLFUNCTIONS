@@ -5,9 +5,11 @@
 
 <dt>Syntax</dt>
 
-|DATEADD(interval, number, date)|
-
 </dl>
+
+```
+DATEADD(interval, number, date)
+```
 
 interval	        Required. The time/date interval to add. Can be one of the following values:
 
