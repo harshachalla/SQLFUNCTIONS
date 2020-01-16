@@ -68,10 +68,11 @@ DATEDIFF(interval, date1, date2)
 ``` 
 6
 ```
-
+<dl>
 DATENAME() Function
-The DATENAME() function returns a string, NVARCHAR type, that represents a specified date part e.g., year, month and day of a specified date.
+The DATENAME() function returns a **string** , NVARCHAR type, that represents a specified date part e.g., year, month and day of a specified date.
 SYNTAX
+</dl>
 DATENAME(date_part,input_date)
 
 example:1
