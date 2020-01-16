@@ -22,8 +22,9 @@ interval	        Required. The time/date interval to add. Can be one of the foll
 
 example: SELECT DATEADD(month, 2, '2017/08/25') AS DateAdd;
 
-  output: DateAdd
+    output: DateAdd
         2017-10-25 00:00:00.000
+        
 example:2 SELECT DATEADD(month, -2, '2017/08/25') AS DateAdd;
 
     output: DateAdd
