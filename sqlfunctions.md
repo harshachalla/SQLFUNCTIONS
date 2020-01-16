@@ -69,102 +69,148 @@ DATEDIFF(interval, date1, date2)
 6
 ```
 <dl>
-DATENAME() Function
-The DATENAME() function returns a **string** , NVARCHAR type, that represents a specified date part e.g., year, month and day of a specified date.
-SYNTAX
+<dt>DATENAME() Function</dt>
+<dd>The DATENAME() function returns a **string** , NVARCHAR type, that represents a specified date part e.g., year, month and day of a specified date.</dd>
+<dt>SYNTAX</dt>
 </dl>
-DATENAME(date_part,input_date)
 
-example:1
-SELECT DATENAME(year, '2018-05-10') [datename];
-output:
+```
+DATENAME(date_part,input_date)
+```
+<dl>
+<dt>example:1</dt>
+<dd>SELECT DATENAME(year, '2018-05-10') [datename];</dd>
+<dt>output:</dt>
+</dl>
+
+```
 datename
 2018
+```
 
-note: Remember the output 2018 is not an integer it is a **character string** 
+#### note: Remember the output 2018 is not an integer it is a **character string** 
 
-DATEPART() function
-The DATEPART() function returns an integer which is a part of a date such as a day, month, and year.
+<dl><dt>DATEPART() function</dt>
+<dd>The DATEPART() function returns an integer which is a part of a date such as a day, month, and year.</dd>
 
-SYNTAX
+<dt>SYNTAX</dt>
+</dl>
+
+```
 DATEPART ( date_part , input_date )
+```
 
-example:1
-SELECT DATEPART(year, '2018-05-10') [datepart],
-output:
+<dl>
+<dt>
+example:1</dt>
+<dd>SELECT DATEPART(year, '2018-05-10') [datepart],</dd>
+<dt>output:</dt>
+</dl>
+
+```
 datepart
 2018
+```
 
-note: Remember the output 2018 is not an integer it is a **INTEGER**
+#### note: Remember the output 2018 is not an integer it is a **INTEGER**
 
-DATENAME() vs. DATEPART()
-Note that DATENAME() is similar to the DATEPART() except for the return type. The DATENAME() function returns the date part as a character string whereas the DATEPART() returns the date part as an integer.
+## DATENAME() vs. DATEPART()
+Note that DATENAME() is similar to the DATEPART() except for the **return type**. The DATENAME() function returns the date part as a **character string** whereas the DATEPART() returns the date part as an **integer.**
 
-example:
-SELECT DATEPART(year, '2018-05-10') + '1' [datepart], DATENAME(year, '2018-05-10') + '1' [datename] ;
-output:
+<dl>
+<dt>example:</dt>
+<dd>SELECT DATEPART(year, '2018-05-10') + '1' [datepart], DATENAME(year, '2018-05-10') + '1' [datename] ;</dd>
+<dt>output:</dt>
+</dl>
 
+```
 datepart    datename
 ----------- -----------
 2019        20181
+```
+<dl>
+<dt> DAY() function</dt>
+ <dd>The DAY() function returns an integer value which represents the day of a month (1-31) of a specified date.</dd>
 
+<dt>SYNTAX</dt>
+</dl>
 
- DAY() function
- The DAY() function returns an integer value which represents the day of a month (1-31) of a specified date.
-
-SYNTAX
+```
 DAY(input_date)
+```
+<dl>
+<dt>example:1</dt>
+<dd>SELECT DAY('2030-12-01') [DAY];</dd>
 
-example:1
-SELECT DAY('2030-12-01') [DAY];
+<dt>output:</dt>
+</dl>
 
-output:
-
+```
 DAY
 1
+```
+<dl>
+<dt>The DAY() function will return 1 if the input date contains only time part:</dt>
 
-The DAY() function will return 1 if the input date contains only time part:
+<dt>example:<dl/dt>
+<dd>SELECT DAY('10:20:30') [DAY];</dd>
 
-example:
-SELECT DAY('10:20:30') [DAY];
+<dt>output:</dt>
+</dl>
 
-output:
-
+```
 DAY
 1
+```
 
-note: similarlly month() and year() works like day() but in year() if the input is only time format the output will return **1900**
+### note: similarlly month() and year() works like day() but in year() if the input is only time format the output will return **1900**
 
-GETDATE() function
-The GETDATE() function returns the current system timestamp as a DATETIME value without the database time zone offset. The DATETIME value is derived from the Operating System (OS) of the server on which the instance of SQL Server is running.
+<dl>
+<dt>GETDATE() function</dt>
+<dd>The GETDATE() function returns the current system timestamp as a DATETIME value without the database time zone offset. The DATETIME value is derived from the Operating System (OS) of the server on which the instance of SQL Server is running.</dd>
 
-SYNTAX
+<dt>SYNTAX</dt>
+</dl>
+
+```
 GETDATE()
+```
 
-example:1
-SELECT GETDATE() current_date_time;
+<dl>
+<dt>example:1</dt>
+<dd>SELECT GETDATE() current_date_time;</dd>
 
-output:
+<dt>output:</dt>
+</dl>
 
+```
 current_date_time
 2019-04-28 15:13:26.270
+```
+<dl>
+<dt>To get the current date, you can use the CONVERT() function to convert the DATETIME value to a DATE as follows:</dt>
 
-To get the current date, you can use the CONVERT() function to convert the DATETIME value to a DATE as follows:
+<dt>example :1</dt> 
+<dd>SELECT CONVERT(DATE, GETDATE()) [Current Date];</dd>
 
-example :1 
-SELECT CONVERT(DATE, GETDATE()) [Current Date];
+<dt>output:</dt>
+</dl>
 
-output:
+```
 Current Date
 2019-04-28
+```
 
-To get the current time only, you can use the CONVERT(), TRY_CONVERT(), or CAST() function to convert the result of the GETDATE() function to a time:
+<dl>
+<dt>To get the current time only, you can use the CONVERT(), TRY_CONVERT(), or CAST() function to convert the result of the GETDATE() function to a time:</dt>
 
-example:1 
+<dt>example:1 </dt>
 
-SELECT CONVERT(TIME,GETDATE()),TRY_CONVERT(TIME, GETDATE()),CAST(GETDATE() AS TIME);
+<dd>SELECT CONVERT(TIME,GETDATE()),TRY_CONVERT(TIME, GETDATE()),CAST(GETDATE() AS TIME);</dd>
 
-output: 
+<dt>output: </dt>
+</dl>
 
+```
 gives current time 
-
+```
