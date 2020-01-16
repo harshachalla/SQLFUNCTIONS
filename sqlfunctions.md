@@ -30,3 +30,13 @@ example:2 SELECT DATEADD(month, -2, '2017/08/25') AS DateAdd;
     output: DateAdd
             2017-06-25 00:00:00.000
 
+
+SQL Server DATEDIFF() Function
+
+The DATEDIFF() function returns the difference between two dates.
+
+Syntax
+DATEDIFF(interval, date1, date2)
+
+example:1  SELECT DATEDIFF(year, '2017/08/25', '2011/08/25') AS DateDiff;
+          output:6
