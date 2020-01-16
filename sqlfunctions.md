@@ -1,10 +1,11 @@
-SQL Date Functions
-DATEADD() Function
-The DATEADD() function adds a time/date interval to a date and then returns the date.
+# SQL Date Functions
+<dt>DATEADD() Function</dt>
+<dd>The DATEADD() function adds a time/date interval to a date and then returns the date.</dd>
 
-Syntax
+<dt>Syntax</dt>
+```
 DATEADD(interval, number, date)
-
+```
 
 interval	        Required. The time/date interval to add. Can be one of the following values:
 
