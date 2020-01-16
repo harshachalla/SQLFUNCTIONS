@@ -30,17 +30,17 @@ DATEADD(interval, number, date)
 <dd>SELECT DATEADD(month, 2, '2017/08/25') AS DateAdd;</dd>
 <dt>output:</dt>
  </dl>
-    ```
-    DateAdd
-        2017-10-25 00:00:00.000
-    ```
+ ```
+DateAdd
+2017-10-25 00:00:00.000
+```
  <dl>
  <dt>example:2</dt> 
 <dd>SELECT DATEADD(month, -2, '2017/08/25') AS DateAdd;</dd>
 <dt>output:</dt>
 </dl>
 ```
- DateAdd
+DateAdd
 2017-06-25 00:00:00.000
 ```
 
@@ -60,6 +60,6 @@ DATEDIFF(interval, date1, date2)
 <dd>SELECT DATEDIFF(year, '2017/08/25', '2011/08/25') AS DateDiff;</dd>
          <dt> output:</dt>
          </dl>
-        
-         ``` 6
-          ```
+``` 
+6
+```
