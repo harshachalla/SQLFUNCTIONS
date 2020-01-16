@@ -4,9 +4,9 @@
 <dd>The DATEADD() function adds a time/date interval to a date and then returns the date.</dd>
 
 <dt>Syntax</dt>
-```
-DATEADD(interval, number, date)
-```
+
+|DATEADD(interval, number, date)|
+
 </dl>
 
 interval	        Required. The time/date interval to add. Can be one of the following values:
