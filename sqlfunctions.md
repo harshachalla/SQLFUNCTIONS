@@ -266,19 +266,19 @@ output: 123.4500    100.00
 SIGN(number)
 ```
 
-<dl>Example<dl>
+<dt>Example</dt>
 
-<dl>SELECT SIGN(-125), SIGN(0), SIGN(564);  <dl>
+<dd>SELECT SIGN(-125), SIGN(0), SIGN(564);  </dd>
 
 ```
 output:-1     0      1
 ```
 
-<dl>square() function <dl>
+<dt>square() function </dt>
 
-<dl>Returns the square of the specified float value.<dl>
+<dd>Returns the square of the specified float value.</dd>
 
-<dl>SYNTAX<dl>
+<dt>SYNTAX</dt>
 
 ```
 SQUARE ( float_expression )  
