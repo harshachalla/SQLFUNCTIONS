@@ -214,3 +214,100 @@ Current Date
 ```
 gives current time 
 ```
+
+
+# sql math functions
+<dl>
+<dt>Round() function</dt>
+<dd>The ROUND() function rounds a number to a specified number of decimal places.</dd>
+
+<dt>SYNTAX</dt>
+</dl>
+
+```
+ROUND(number, decimals, operation)
+```
+
+### note : if the decimal is a positive number then round function rounds the number from right side of the point(.), if it is a negitive number then the round function rounds the number from the left side of the point(.). below are the some of the examples....
+<dl>
+<dt>examples</dt>
+
+<dd>SELECT ROUND(123.9994, 3), ROUND(123.9995, 3);  </dd>
+
+```
+output: 123.9990    124.0000
+```
+
+
+<dd>SELECT ROUND(123.4545, 2), ROUND(123.45, -2);  </dd>
+
+```
+
+output: 123.4500    100.00
+```
+
+</dl>
+SIGN() Function
+
+The SIGN() function returns the sign of a number.
+
+This function will return one of the following:
+
+If number > 0, it returns 1
+If number = 0, it returns 0
+If number < 0, it returns -1
+
+SYNTAX
+SIGN(number)
+
+Example
+
+SELECT SIGN(-125), SIGN(0), SIGN(564);  
+
+output:-1     0      1
+
+square() function 
+
+Returns the square of the specified float value.
+
+SYNTAX
+SQUARE ( float_expression )  
+
+ example:
+
+ select square(10);
+ output: 100
+
+ Sqrt() function
+ Returns the square root of the specified float value.
+
+SYNTAX
+SQRT(float_expression )
+
+EXAMPLE:
+SELECT SQRT(1.00), SQRT(10.00);  
+
+Output: 1.00        3.16
+
+POWER() FUNCTION
+Returns the value of the specified expression to the specified power.
+
+SYNTAX
+POWER ( float_expression , y )  
+
+EXAMPLE:
+SELECT POWER(2.0, 3);  
+
+output: 8.0
+
+PI() FUNCTION
+Returns the constant value of PI.
+
+SYNTAX
+PI ( )  
+
+Example:
+SELECT PI();  
+
+output: 3.14159265358979  
+
