@@ -247,67 +247,97 @@ output: 123.4500    100.00
 ```
 
 </dl>
-SIGN() Function
 
-The SIGN() function returns the sign of a number.
 
-This function will return one of the following:
+<dl>
+<dt>SIGN() Function</dt>
 
-If number > 0, it returns 1
-If number = 0, it returns 0
-If number < 0, it returns -1
+<dd>The SIGN() function returns the sign of a number.</dd>
 
-SYNTAX
+<dt>This function will return one of the following:</dt>
+
+* If number > 0, it returns 1
+* If number = 0, it returns 0
+* If number < 0, it returns -1
+
+<dt>SYNTAX</dt>
+
+```
 SIGN(number)
+```
 
-Example
+<dl>Example<dl>
 
-SELECT SIGN(-125), SIGN(0), SIGN(564);  
+<dl>SELECT SIGN(-125), SIGN(0), SIGN(564);  <dl>
 
+```
 output:-1     0      1
+```
 
-square() function 
+<dl>square() function <dl>
 
-Returns the square of the specified float value.
+<dl>Returns the square of the specified float value.<dl>
 
-SYNTAX
+<dl>SYNTAX<dl>
+
+```
 SQUARE ( float_expression )  
+```
 
- example:
+<dt> example:</dt>
 
- select square(10);
+ <dd>select square(10);</dd>
+
+ ```
  output: 100
+```
 
- Sqrt() function
- Returns the square root of the specified float value.
+<dt> Sqrt() function</dt>
+ <dd>Returns the square root of the specified float value.</dd>
 
-SYNTAX
+<dt>SYNTAX</dt>
+
+```
 SQRT(float_expression )
+```
 
-EXAMPLE:
-SELECT SQRT(1.00), SQRT(10.00);  
+<dt>EXAMPLE:</dt>
+<dd>SELECT SQRT(1.00), SQRT(10.00);  </dd>
 
+```
 Output: 1.00        3.16
+```
 
-POWER() FUNCTION
-Returns the value of the specified expression to the specified power.
+<dt>POWER() FUNCTION</dt>
+<dd>Returns the value of the specified expression to the specified power.</dd>
 
-SYNTAX
+<dt>SYNTAX</dt>
+
+```
 POWER ( float_expression , y )  
+```
 
-EXAMPLE:
-SELECT POWER(2.0, 3);  
+<dt>EXAMPLE:</dt>
+<dd>SELECT POWER(2.0, 3);  </dd>
 
+```
 output: 8.0
+```
 
-PI() FUNCTION
-Returns the constant value of PI.
+<dt>PI() FUNCTION</dt>
+<dd>Returns the constant value of PI.</dd>
 
-SYNTAX
+<dt>SYNTAX</dt>
+
+```
 PI ( )  
+```
 
-Example:
-SELECT PI();  
+<dt>Example:</dt>
+<dd>SELECT PI();  </dd>
 
+```
 output: 3.14159265358979  
+```
 
+</dl>
